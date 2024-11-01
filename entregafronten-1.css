@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 3px;
+    padding: 3px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333333;
+    color: #fff;
+    padding: 18px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Diseño responsivo */
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 80%;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        margin: 20px;
+    }
+}
+
+h1  {
+    color: #04010ce9;
+    background-color:#7a9cff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+
+h2    {
+       color: #04010ce9;
+       background-color: #7a9cff;
+        font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+   }
+
+   h4 {
+       color: #04010ce9;
+       background-color: #f3f4f8;
+       font-family:  Georgia, 'Times New Roman', Times, serif ;
+       font-size: 35px;
+   }
