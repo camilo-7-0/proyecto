@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA</title>
+      <link rel="stylesheet" href="entrega final css.css"   type="text/css">     
+       
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+    
+<body>
+
+
+
+  <div   class="contenedor"  id="contenedor">
+
+
+
+
+
+
+
+            <div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
+  
+      <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                 <img src="img1.jpeg" class="d-block w-40" >
+                 </div>
+    
+                <div class="carousel-item">
+                <img src="img3.jpeg" class="d-block w-40" >
+               </div>
+    
+               <div class="carousel-item">
+               <img src="img4.jpeg" class="d-block w-40" >
+
+               </div>
+        <div    class="titulo">
+
+          <h1> IRIS  1.7     </h1>  
+
+        </div>
+
+
+
+
+        </div>
+
+        
+
+
+                   </div>
+   
+
+<div     class="navegacion">
+            <ul class="menu">
+            <li><a  href="#inicio">inicio</a></li>
+            <li><a  href="#productos">productos</a></li>
+            <li><a  href="#contacto">contacto</a></li>
+            </ul>
+
+
+<div  class="  tex">
+
+<p>        Nos complace presentarnos   somos <span  style="color: blue;   font-size: large;">IRIS  1.7,</span> una empresa dedicada a la venta de artículos de computación de alta calidad. Con más de 20 años de experiencia en el mercado, nos hemos consolidado como líderes en la provisión de soluciones tecnológicas innovadoras y eficientes.
+
+ofrecemos una amplia gama de productos que incluyen computadoras de escritorio, laptops, componentes de hardware, periféricos, y accesorios. Trabajamos con las marcas más reconocidas del sector para garantizar que nuestros clientes reciban productos de la más alta calidad y rendimiento.
+
+Nuestro compromiso con la satisfacción del cliente es nuestra prioridad. Contamos con un equipo de profesionales altamente capacitados que están siempre dispuestos a brindar asesoramiento personalizado y soporte técnico para asegurar que cada compra cumpla con las expectativas de nuestros clientes.
+
+Además,  nos esforzamos por mantenernos a la vanguardia de las últimas tendencias y avances tecnológicos. Esto nos permite ofrecer productos innovadores que satisfacen las necesidades cambiantes del mercado y de nuestros clientes.
+
+Nos encantaría tener la oportunidad de colaborar con   ustedes y  explorar cómo podemos ayudarle a alcanzar sus objetivos tecnológicos.       </p>
+
+
+</div>
+
+
+
+
+
+
+
+            <div class="accordion " id="accordionFlushExample">
+  
+  
+              <div class="accordion-item1"  id="productos">
+             <h2 class="accordion-header">
+
+
+    
+       <div class="cart"   id="cart">
+        <img          src="carrito.png"      class="carrito">
+        <h2><span    class=" shopping"> shopping </span> </h2>
+        <ul id="cart-items"></ul>
+        <p class="total">  <span      class="TOTAL"> TOTAL</span>                  $<span id="total-price">0.00</span></p>
+        <button onclick="checkout()">Pagar</button>
+        <button class="btn-eliminar" data-id="1">Eliminar</button>
+
+       
+        
+    </div>
+
+    
+       
+
+
+      <div class="description" id="description"></div>
+      
+
+
+     
+
+
+         
+
+
+
+
+
+
+
+
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        PRODUCTOS 
+      </button>
+    </h2>
+
+
+
+    <audio controls    class="audio">
+        <source src="Boombastic.mp3" type="audio/mpeg">
+        
+    </audio>
+         <p> <span   class="DALE-CLIP">DALE-CLIP  </span></p>
+
+
+
+
+
+
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">   
+      <img src="compu3.jpeg"        >
+       
+         <div class="product">
+        <span class="product-name"><p>Notebook Dell Inspiron I5 Tactil 32gb Ram Computadora 15,6</p></span>
+        <span class="product-price">$55.00</span>
+        <button onclick="addToCart('Producto 1', 55.00)">Añadir al Carrito</button>
+       <button onclick="showDescription('Producto 1', '<p> La iMac de 21.5 pulgadas ahora incluye procesadores de 4 núcleos de octava generación y, por primera vez, procesadores de 6 núcleos que brindan un rendimiento un 60% más rápido.    </p>   ')">Ver descripción</button>
+      
+      </div>
+
+
+      
+
+      <img src="compu4.jpeg"        >
+       <div class="product">
+        <span class="product-name"><p> Notebook Dell I5 Tactil 32gb Ram Computadora Portatil 15,6        </p></span>
+        <span class="product-price">$24.00</span>
+        <button onclick="addToCart('Producto 2', 24.00)">Añadir al Carrito</button>
+       <button onclick="showDescription('Producto 2', ' Las notebooks, también llamada laptop, es una computadora portátil de tamaño mediano a grande, con capacidades similares a una de escritorio. Por su parte, las netbooks son versiones más pequeñas y menos potentes, optimizadas para tareas de navegación y aplicaciones de oficina básicas.  .')">Ver descripción</button>
+      
+      </div>
+      
+
+
+      <img src="compu6.jpeg"        > 
+       <div class="product">
+        <span class="product-name"><p>  Notebook Dell Inspiron I5 Computadora Portatil 15,6 Laptop       </p></span>
+        <span class="product-price">$40.00</span>
+        <button onclick="addToCart('Producto 3', 40.00)">Añadir al Carrito</button>
+        <button onclick="showDescription('Producto 3', '  Especificaciones técnicas: Sistema Operativo Linux Procesador Intel® Celeron® N4020 2 núcleos de 1.10 GHz (up to 2.80 GHz) Memoria 8 GB DDR4 Almacenamiento 480 GB SSD Pantalla HD 11.6” Resolución 1368x768 Video Intel® UHD       ')">Ver descripción</button>
+      
+      </div>
+      
+
+      <img src="compu5.jpeg"        >
+       <div class="product">
+        <span class="product-name"><p>Notebook Dell Inspiron I5 Tactil 16gb Ram Computadora 15,6    </p></span>
+        <span class="product-price">$46.00</span>
+        <button onclick="addToCart('Producto 4', 46.00)">Añadir al Carrito</button>
+       <button onclick="showDescription('Producto 4', '  La tecnología In-plane Switching (IPS) y ComfyView (matte) reduce el brillo y mejora la visualización desde cualquier ángulo.                  ')">Ver descripción</button>
+      
+      </div>
+      
+
+      <img src="compu8.jpeg"        > 
+       <div class="product">
+        <span class="product-name"><p> Pc Computadora De Escritorio Completa Cpu Oficina Gamer Wifi     </p></span>
+        <span class="product-price">$70.00</span>
+        <button onclick="addToCart('Producto 5', 70.00)">Añadir al Carrito</button>
+       <button onclick="showDescription('Producto 5', '      Con un diseño moderno y especificaciones sólidas, esta notebook ofrece una experiencia informática fluida y confiable en Argentina.         ')">Ver descripción</button>
+      
+      </div>
+      
+
+
+       <img src="compu9.jpeg"        > 
+        <div class="product">
+        <span class="product-name"><p> Pc Cpu Nueva Computadora Escritorio Completa Monitor      </p></span>
+        <span class="product-price">$44.00</span>
+        <button onclick="addToCart('Producto 6', 44.00)">Añadir al Carrito</button>
+       <button onclick="showDescription('Producto 6', '  UHD proporcionan una experiencia visual fluida para tareas cotidianas, navegación web y reproducción de videos.          ')">Ver descripción</button>
+      
+      </div>
+       
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item2"   id="contacto" >
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        CONTACTO 
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+      
+
+
+      
+ <div class="formulario"   id="formulario"  >
+
+
+
+        <h2>Formulario de Contacto</h2>
+        <form action="/submit" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+ 
+  </div>
+
+
+
+
+
+  <div   class="inicio"   id="inicio">
+
+
+    <img      src="wuasa.jpeg"   class="wuasa">
+    080010203040
+    <img      src="facebook.png"   class="facebook" >
+    
+    <img      src="instagram.jpeg"   class="instagram">
+   
+
+<main id="main-content">
+
+     
+
+
+
+
+
+     <div  class="fila"    id="fila">
+           <span>   Procesadores      </span>
+           <span> Socket Amd AM4        </span>
+           <span>   Socket Amd AM5    </span>
+           <span> Socket Intel 1200        </span>
+           <span>  Socket Intel 1700       </span>
+           <span>Socket Intel 1900</span>
+     </div>
+     
+
+
+
+
+
+     
+
+     <div  class="fila"    id="fila">
+
+            <span>  Placas de video   </span>
+            <span>   Placas de Video Nvidia  </span>
+            <span>  Placas de Video AMD  </span>
+     </div>
+
+
+
+
+
+
+
+     <div  class="fila"    id="fila">
+           
+                <span> Notebook Gamer      </span>
+                <span>Notebook Lenovo     </span>
+                <span> Notebook HP    </span>
+                <span> Notebook Asus     </span>
+                <span>  Notebook Acer     </span>
+                <span> Notebook Thunderobot    </span>
+     </div>
+
+
+
+
+ 
+  
+
+
+
+
+
+        
+ </main>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
+
+
+
+  <script>
+
+
+let cart = [];
+        let totalPrice = 0;
+
+        function addToCart(productName, productPrice) {
+            cart.push({ name: productName, price: productPrice });
+            totalPrice += productPrice;
+            updateCart();
+        }
+
+
+
+        // Mostrar descripción ampliada del producto
+        function showDescription(name, description) {
+            const descriptionDiv = document.getElementById('description');
+            descriptionDiv.style.display = 'block';
+            descriptionDiv.innerHTML = `
+                <h3>Descripción de ${name}</h3>
+                <p>${description}</p>
+                <button onclick="hideDescription()">Cerrar</button>
+            `;
+        }
+
+        // Ocultar la descripción ampliada
+        function hideDescription() {
+            const descriptionDiv = document.getElementById('description');
+            descriptionDiv.style.display = 'none';
+        }
+
+
+        
+
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                cartItems.appendChild(li);
+            });
+            document.getElementById('total-price').textContent = totalPrice.toFixed(2);
+        }
+
+        function checkout() {
+            alert(`Total a pagar: $${totalPrice.toFixed(2)}`);
+            cart = [];
+            totalPrice = 0;
+            updateCart();
+        }
+
+
+ 
+
+        
+
+
+ document.querySelector(".btn-eliminar").addEventListener("click", function(event) {
+        const id = event.target.getAttribute("data-id");
+        console.log("Producto con ID " + id + " eliminado.");
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
